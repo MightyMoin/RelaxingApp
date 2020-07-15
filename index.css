@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans+Condensed:wght@300&display=swap');
+body {
+  font-family: 'Abel', sans-serif;
+  margin: 0;
+  background: url('https://images.unsplash.com/photo-1464457312035-3d7d0e0c058e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f0f8ff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+h1 {
+  font-size: 4.2rem;
+  color: #222831;
+  font-weight: bold;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 1.3rem;
+  transform: scale(1);
+}
+.gradient-container {
+  position: absolute;
+  height: 18.75rem;
+  width: 18.75rem;
+  background: conic-gradient(#30475e 38%, #ececec 0 62%, #6b778d 0);
+  z-index: -2;
+  border-radius: 50%;
+}
+.text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222831;
+  height: 17.5rem;
+  width: 17.5rem;
+  border-radius: 50%;
+}
+.circle-pointer{
+    position: absolute;
+    height: 21.25rem;
+    width: 1.25rem;
+    animation: rotate 8s linear forwards infinite;
+    
+}
+.circle{
+    height: 1.25rem;
+    width: 1.25rem;
+    background-color: #fff;
+    border-radius: 50%;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+
+    }
+}
+.grow{
+    animation: grow 3s linear forwards ;
+}
+.shrink{
+    animation: shrink 3s linear forwards ;
+}
+.hold{
+    transform: scale(1.2);
+}
+@keyframes grow {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+@keyframes shrink {
+    from{
+        transform: scale(1.2);
+    }
+    to{
+        transform: scale(1);
+    }
+}
